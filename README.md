@@ -70,7 +70,7 @@ DB_PASS = (your password)
 Open your browser and go to:
 
 http://localhost/php_project
-
+---
 ##🗂️ Folder Structure
 ```bash
 php_project/
@@ -81,7 +81,7 @@ php_project/
 ├── config.php
 ├── README.md
 └── ...
-
+---
 ##🤝 Contributing
 
 **Contributions are always welcome!**
@@ -95,23 +95,23 @@ Fork the repo
 3. **Push to the branch (git push origin new-feature)**
 
 4. **Open a Pull Request**
-
+---
 
 ##📄 License
 
 **This project is open-source and free to use.**
 
-
+---
 ##🧑‍💻 Contact
 
 **Created by @22103151-ship-it**
 **Created by Md. Abdullah Al Nayeem**
 
-
+---
 ##🧑‍💻 Author
 
 **Md. Abdullah Al Nayeem**
 **GitHub: https://github.com/22103151-ship-it **
-
+---
 
 Feel free to reach out if you have questions or ideas to expand this project!
