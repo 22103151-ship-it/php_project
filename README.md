@@ -32,7 +32,7 @@ It’s ideal as a beginner-friendly PHP project, college assignment, or foundati
 
 To run this project locally, follow the steps below:
 
-### 📌 Prerequisites
+## 📌 Prerequisites
 
 Make sure you have:
 
@@ -42,7 +42,7 @@ Make sure you have:
 
 ---
 
-### 🧩 Installation
+## 🧩 Installation
 
 1. **Clone the repository**
 
@@ -71,7 +71,7 @@ Open your browser and go to:
 
 http://localhost/php_project
 
-###🗂️ Folder Structure
+##🗂️ Folder Structure
 ```bash
 php_project/
 ├── css/
@@ -82,7 +82,7 @@ php_project/
 ├── README.md
 └── ...
 
-###🤝 Contributing
+##🤝 Contributing
 
 **Contributions are always welcome!**
 If you’d like to help improve this project:
@@ -97,18 +97,18 @@ Fork the repo
 4. **Open a Pull Request**
 
 
-###📄 License
+##📄 License
 
 **This project is open-source and free to use.**
 
 
-###🧑‍💻 Contact
+##🧑‍💻 Contact
 
 **Created by @22103151-ship-it**
 **Created by Md. Abdullah Al Nayeem**
 
 
-###🧑‍💻 Author
+##🧑‍💻 Author
 
 **Md. Abdullah Al Nayeem**
 **GitHub: https://github.com/22103151-ship-it **
