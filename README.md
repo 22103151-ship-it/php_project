@@ -46,21 +46,21 @@ Make sure you have:
 
 1. **Clone the repository**
 
-```bash
+
 git clone https://github.com/22103151-ship-it/php_project.git
-```bash
+
 
 2. **Move the project to your web server folder**
 e.g., htdocs for XAMPP or www for WAMP.
 
 3. **Create a database**
-```bash
+
 Use phpMyAdmin or the MySQL console:
 CREATE DATABASE inventory_system;
 
 4. **Update the database config**
 Open the database config file (e.g., config.php) and set your DB credentials:
-```bash
+
 DB_HOST = localhost
 DB_NAME = inventory_system
 DB_USER = root
@@ -68,11 +68,11 @@ DB_PASS = (your password)
 
 5. **Run the application**
 Open your browser and go to:
-```bash
+
 http://localhost/php_project
 
 ###🗂️ Folder Structure
-```bash
+
 php_project/
 ├── css/
 ├── js/
@@ -109,9 +109,9 @@ Fork the repo
 
 
 ###🧑‍💻 Author
-```bash
+
 **Md. Abdullah Al Nayeem**
 **GitHub: https://github.com/22103151-ship-it **
-```bash
+
 
 Feel free to reach out if you have questions or ideas to expand this project!
