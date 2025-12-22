@@ -72,7 +72,7 @@ Open your browser and go to:
 http://localhost/php_project
 
 ###🗂️ Folder Structure
-
+```bash
 php_project/
 ├── css/
 ├── js/
