@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_role']) || !in_array($_SESSION['user_role'], ['admin','staff'])) {
+if (!isset($_SESSION['user_role']) || !in_array($_SESSION['user_role'], ['admin','staff','supplier'])) {
     header("Location: ../index.php");
     exit;
 }
@@ -17,9 +17,13 @@ $result = $conn->query("
 ");
 ?>
 
-<div style="max-width:900px; margin:20px auto; padding:20px; background:#f8f8f8; border-radius:8px;">
+<div style="max-width:900px; 
+               margin:20px auto; 
+               padding:20px; 
+               background:#f8f8f8; 
+               border-radius:8px;">
     <a href="dashboard.php" style="display:inline-block; margin-bottom:20px; padding:8px 15px; background:#555; color:white; border-radius:5px; text-decoration:none;"> Back </a>
-    <h2>📦 Pending Orders</h2>
+    <h2>📦 Pending Orders</h2> <!-- ✅ Corrected heading -->
 
     <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse:collapse; background:white; text-align:left;">
         <tr style="background:#ddd;">
@@ -41,28 +45,8 @@ $result = $conn->query("
     </table>
 </div>
 
-<style>
-    /* Responsive Grid */
-@media (max-width: 992px) {
-    .dashboard-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-}
-
-@media (max-width: 600px) {
-    .dashboard-cards {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-}
-</style>
-
-
-       
-    </div>
-    <!-- <footer style="
-    position: fixed;
+<!-- <footer style="
+    /* position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -72,5 +56,5 @@ $result = $conn->query("
     padding: 15px 0;
 ">
     <p>© 2025 Stock Management System. All rights reserved.</p>
-</footer> -->
+</footer> */ -->
 
