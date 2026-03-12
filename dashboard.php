@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
+if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'staff') {
     header("Location: ../index.php");
     exit;
 }
@@ -31,7 +31,7 @@ if (isset($conn)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Staff Dashboard</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,21 +225,21 @@ if (isset($conn)) {
 
 <div class="main-content">
     <div class="dashboard-header">
-        <h1>ADMIN DASHBOARD</h1>
+        <h1>STAFF DASHBOARD</h1>
        
     </div>
 
     <div class="stats-grid">
-        <a href="manage_users.php" class="stat-card">
+    <a href="items.php" class="stat-card">
             <div class="card-content">
-                <div class="card-icon icon-users"><i class="fa-solid fa-users"></i></div>
+                <div class="card-icon icon-products"><i class="fa-solid fa-box-archive"></i></div>
                 <div class="card-details">
-                    <h3>Total Users</h3>
-                    <p class="card-count"><?php echo $user_count; ?></p>
+                    <h3>Total Products</h3>
+                    <p class="card-count"><?php echo $product_count; ?></p>
                 </div>
             </div>
             <div class="card-footer">
-                Manage Users <i class="fa-solid fa-arrow-right"></i>
+                View Products <i class="fa-solid fa-arrow-right"></i>
             </div>
         </a>
 
@@ -256,18 +256,7 @@ if (isset($conn)) {
             </div>
         </a>
         
-        <a href="products.php" class="stat-card">
-            <div class="card-content">
-                <div class="card-icon icon-products"><i class="fa-solid fa-box-archive"></i></div>
-                <div class="card-details">
-                    <h3>Total Products</h3>
-                    <p class="card-count"><?php echo $product_count; ?></p>
-                </div>
-            </div>
-            <div class="card-footer">
-                View Products <i class="fa-solid fa-arrow-right"></i>
-            </div>
-        </a>
+       
 
         <a href="sell_product.php" class="stat-card">
             <div class="card-content">
@@ -281,57 +270,14 @@ if (isset($conn)) {
             </div>
         </a>
 
-        <a href="purchase_orders.php" class="stat-card">
-            <div class="card-content">
-                <div class="card-icon icon-orders"><i class="fa-solid fa-cart-shopping"></i></div>
-                <div class="card-details">
-                    <h3>Total Orders</h3>
-                    <p class="card-count"><?php echo $order_count; ?></p>
-                </div>
-            </div>
-             <div class="card-footer">
-                View All Orders <i class="fa-solid fa-arrow-right"></i>
-            </div>
-        </a>
+      
         
-        <a href="delivered_orders.php" class="stat-card">
-            <div class="card-content">
-                <div class="card-icon icon-delivered"><i class="fa-solid fa-circle-check"></i></div>
-                <div class="card-details">
-                    <h3>Delivered Orders</h3>
-                    <p class="card-count"><?php echo $delivered_count; ?></p>
-                </div>
-            </div>
-            <div class="card-footer">
-                View Delivered <i class="fa-solid fa-arrow-right"></i>
-            </div>
-        </a>
+       
         
-        <a href="pending_orders.php" class="stat-card">
-            <div class="card-content">
-                <div class="card-icon icon-pending"><i class="fa-solid fa-clock"></i></div>
-                <div class="card-details">
-                    <h3>Pending Orders</h3>
-                    <p class="card-count"><?php echo $pending_count; ?></p>
-                </div>
-            </div>
-            <div class="card-footer">
-                View Pending <i class="fa-solid fa-arrow-right"></i>
-            </div>
-        </a>
         
-        <a href="returned_orders.php" class="stat-card">
-            <div class="card-content">
-                <div class="card-icon icon-returned"><i class="fa-solid fa-rotate-left"></i></div>
-                <div class="card-details">
-                    <h3>Returned Orders</h3>
-                    <p class="card-count"><?php echo $returned_count; ?></p>
-                </div>
-            </div>
-            <div class="card-footer">
-                View Returned <i class="fa-solid fa-arrow-right"></i>
-            </div>
-        </a>
+    
+        
+        
     </div>
 </div>
 
